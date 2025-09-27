@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra ProfitHub - Investment Platform</title>
+    <style>
+        :root {
+            --primary-blue: #001f3f;
+            --accent-gold: #ffd700;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: var(--primary-blue);
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: var(--accent-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .brand-text {
+            color: var(--white);
+        }
+
+        .brand-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .brand-text .accent {
+            color: var(--accent-gold);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 0.5rem;
+        }
+
+        .vip-plan {
+            background: linear-gradient(45deg, var(--primary-blue), #002b5c);
+            color: var(--white);
+        }
+
+        .vip-plan h2 {
+            color: var(--accent-gold);
+            border-bottom-color: var(--accent-gold);
+        }
+
+        .plan-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .plan-details {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+        }
+
+        .wallet-address {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            word-break: break-all;
+            border: 1px dashed #ccc;
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--white);
+            padding: 2rem;
+            opacity: 0.8;
+        }
+
+        .highlight {
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .brand-text h1 {
+                font-size: 2rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">AP</div>
+            <div class="brand-text">
+                <h1>ASTRA <span class="accent">PROFITHUB</span></h1>
+                <p>Smart Investments, Secure Returns</p>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="card vip-plan">
+                <h2>💰 VIP Investment Plans</h2>
+                
+                <div class="plan-item">
+                    <span><strong>VIP 1</strong></span>
+                    <span>Investment: $5</span>
+                </div>
+                <div class="plan-details">
+                    <div>Daily Return: <span class="highlight">$1 USD</span></div>
+                    <div>Recharge Bonus: <span class="highlight">$1 USD</span></div>
+                    <div>Total Return: <span class="highlight">$11 USD</span></div>
+                    <div>Duration: 10 days</div>
+                </div>
+
+                <div class="plan-item">
+                    <span><strong>VIP 2</strong></span>
+                    <span>Investment: $10</span>
+                </div>
+                <div class="plan-details">
+                    <div>Daily Return: <span class="highlight">$2 USD</span></div>
+                    <div>Recharge Bonus: <span class="highlight">$2 USD</span></div>
+                    <div>Total Return: <span class="highlight">$22 USD</span></div>
+                    <div>Duration: 10 days</div>
+                </div>
+
+                <div class="plan-item">
+                    <span><strong>VIP 3</strong></span>
+                    <span>Investment: $15</span>
+                </div>
+                <div class="plan-details">
+                    <div>Daily Return: <span class="highlight">$3 USD</span></div>
+                    <div>Recharge Bonus: <span class="highlight">$3 USD</span></div>
+                    <div>Total Return: <span class="highlight">$33 USD</span></div>
+                    <div>Duration: 10 days</div>
+                </div>
+
+                <div class="plan-item">
+                    <span><strong>VIP 4</strong></span>
+                    <span>Investment: $20</span>
+                </div>
+                <div class="plan-details">
+                    <div>Daily Return: <span class="highlight">$4 USD</span></div>
+                    <div>Recharge Bonus: <span class="highlight">$4 USD</span></div>
+                    <div>Total Return: <span class="highlight">$44 USD</span></div>
+                    <div>Duration: 10 days</div>
+                </div>
+
+                <div class="plan-item">
+                    <span><strong>VIP 5</strong></span>
+                    <span>Investment: $30</span>
+                </div>
+                <div class="plan-details">
+                    <div>Daily Return: <span class="highlight">$6 USD</span></div>
+                    <div>Recharge Bonus: <span class="highlight">$5 USD</span></div>
+                    <div>Total Return: <span class="highlight">$65 USD</span></div>
+                    <div>Duration: 10 days</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>💳 Withdrawal Rules</h2>
+                <div class="plan-details">
+                    <div><strong>Minimum Withdrawal:</strong> <span class="highlight">$5 USD</span></div>
+                    <div><strong>Active Sign-in Required:</strong> 5 consecutive days</div>
+                    <div><strong>Processing Time:</strong> 24-48 hours</div>
+                    <div><strong>Withdrawal Fee:</strong> 0% (Free)</div>
+                </div>
+                <ul>
+                    <li>Must be active for 5 consecutive days before withdrawal</li>
+                    <li>Daily sign-in bonus counts toward activity</li>
+                    <li>VIP members get priority processing</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>👥 Referral Program</h2>
+                <div class="plan-details">
+                    <div><strong>Referral Bonus:</strong> <span class="highlight">$0.5 per referral</span></div>
+                    <div><strong>Minimum Withdrawal:</strong> <span class="highlight">$10 USD</span></div>
+                    <div><strong>VIP Requirement:</strong> 5+ referrals must purchase VIP</div>
+                </div>
+                <ul>
+                    <li>3-level referral commission system</li>
+                    <li>Lifetime earnings from referrals</li>
+                    <li>Real-time referral tracking</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🎁 Daily Rewards</h2>
+                <div class="plan-details">
+                    <div><strong>Daily Sign-in Bonus:</strong> <span class="highlight">$0.1 USD</span></div>
+                    <div><strong>Weekly Bonus:</strong> $1 for 7 consecutive days</div>
+                    <div><strong>Monthly Loyalty:</strong> $5 bonus for 30 days</div>
+                </div>
+                <p>Daily rewards help you meet the 5-day active requirement for withdrawals!</p>
+            </div>
+
+            <div class="card">
+                <h2>💰 Deposit Wallet</h2>
+                <p><strong>USDT (BEP-20):</strong></p>
+                <div class="wallet-address">
+                    0x41ef699B7C10C04a6f7c47D0AB0f19CA8398583a
+                </div>
+                <div class="plan-details" style="margin-top: 1rem;">
+                    <div><strong>Network:</strong> BEP-20 (Binance Smart Chain)</div>
+                    <div><strong>Token:</strong> USDT Only</div>
+                    <div><strong>Memo:</strong> Include your User ID</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📱 Contact Support</h2>
+                <div class="plan-details">
+                    <div><strong>Telegram:</strong> @AstraSupport</div>
+                    <div><strong>Email:</strong> support@astraprofithub.com</div>
+                    <div><strong>Response Time:</strong> Within 6 hours</div>
+                </div>
+                <p>Available 24/7 for VIP members</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Astra ProfitHub. All rights reserved.</p>
+            <p>Minimum withdrawal: $5 USD | Active 5 days required</p>
+        </footer>
+    </div>
+</body>
+</html>
